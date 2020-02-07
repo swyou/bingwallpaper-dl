@@ -25,7 +25,7 @@ The author of bingwallpaper-dl will NOT be responsible for any illegal use of th
 USAGE:
 -------
 
-`clone https://github.com/swyou/bingwallpaper-dl.git`
+`git clone https://github.com/swyou/bingwallpaper-dl.git`
 
 `cd bingwallpaper-dl`
 
