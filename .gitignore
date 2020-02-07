@@ -31,3 +31,5 @@ htmlcov
 .idea
 
 .vscode
+
+.venv
