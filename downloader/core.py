@@ -62,7 +62,7 @@ class PageAdviser(object):
         if not str:
             return datetime.date.today()
         splits = str.split("-")
-        if len(splits) is not 3:
+        if len(splits) != 3:
             return datetime.date.today()
         try:
             year = int(splits[0])
