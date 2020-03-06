@@ -15,7 +15,7 @@ setup(
     package_data={
         'bingwallpaper-dl': ['README.rst', 'LICENSE']
     },
-    install_requires=['requests'],
+    install_requires=['aiohttp'],
     entry_points="""
     [console_scripts]
     bwpdl = downloader.main:main

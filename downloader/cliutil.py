@@ -9,7 +9,7 @@ def read_args():
     parser.add_argument("--from", dest="start_date", help="start date", type=str)
     parser.add_argument("--to", dest="end_date", help="end date, default to today.", type=str)
     parser.add_argument("--date", help="download wallpaper of a specific day", type=str)
-    # parser.add_argument("--worker", help="number of download workers, default is one.", type=int)
+    parser.add_argument("--maxr", help="max request number at the same time, default is 3.", type=int)
     return validate_args(parser.parse_args())
 
 
@@ -20,4 +20,6 @@ def validate_args(arguments):
         arguments.directory += "/"
     if not os.path.exists(arguments.directory):
         os.makedirs(arguments.directory)
+    if not arguments.maxr:
+        arguments.maxr = 5
     return arguments

@@ -4,18 +4,17 @@ from downloader import core
 
 def main():
     arguments = cliutil.read_args()
-    downloader = core.ImgDownloader(arguments)
-    downloader.download()
-    downloader.close()
+    with core.DownloadDispatcher(arguments) as downloader:
+        downloader.dispatch()
 
 
 def test():
     arguments = cliutil.read_args()
-    arguments.date = '2019-01-01'
-    downloader = core.ImgDownloader(arguments)
-    downloader.download()
-    downloader.close()
+    arguments.start_date = '2020-02-25'
+    with core.DownloadDispatcher(arguments) as downloader:
+        downloader.dispatch()
 
 
 if __name__ == '__main__':
-    main()
+    # main()
+    test()
