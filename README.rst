@@ -1,10 +1,18 @@
 bingwallpaper-dl
 =======
 
+UPDATE ON 6TH MAR 2020:
+---------
+
+switched to an aio way.
+aiohttp is used to handle http request,
+requests is now removed from dependencies,
+
 REQUIREMENTS:
 ---------
-- python3
-- requests
+- Python3
+- ~~requests~~
+- aiohttp
 
 DISCLAIMER:
 --------

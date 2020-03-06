@@ -8,10 +8,18 @@ the earliest day we can find a wallpaper is limited to approximately 178 days ag
 bingwallpaper-dl locates bing wallpaper image by parsing content of a third-party website:
 http://sowang.com/bbs/forumdisplay.php?fid=67
 
+UPDATE ON 6TH MAR 2020:
+---------
+
+switched to an aio way.
+aiohttp is used to handle http request,
+requests is now removed from dependencies,
+
 REQUIREMENTS:
 ---------
 - Python3
-- requests
+- ~~requests~~
+- aiohttp
 
 DISCLAIMER:
 --------
