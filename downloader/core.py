@@ -18,7 +18,7 @@ class DownloadDispatcher:
         self.pic_page_urls = []
         self.pic_urls = []
         self._finished_pic_count = 0
-        self.conn = TCPConnector(ssl=False, limit=100, use_dns_cache=True)
+        self.conn = TCPConnector(ssl=False, limit=10, use_dns_cache=True)
 
     def __enter__(self):
         return self
