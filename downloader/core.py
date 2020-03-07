@@ -1,8 +1,9 @@
 import asyncio
 
-from aiohttp import client
-from downloader import parsers
 from aiohttp import TCPConnector
+from aiohttp import client
+
+from downloader import parsers
 
 _URL_ROOT = "http://sowang.com/bbs/"
 _LIST_PAGE = "forumdisplay.php?fid=67"
