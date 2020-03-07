@@ -10,7 +10,7 @@ def main():
 
 def test():
     arguments = cliutil.read_args()
-    arguments.start_date = '2020-02-25'
+    arguments.start_date = '2020-02-29'
     with core.DownloadDispatcher(arguments) as downloader:
         downloader.dispatch()
 

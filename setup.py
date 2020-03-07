@@ -7,7 +7,7 @@ with codecs.open('README.rst', encoding='utf-8') as f:
 
 setup(
     name="bingwallpaper-dl",
-    version="0.1.0",
+    version="1.0.0",
     license='http://www.apache.org/licenses/LICENSE-2.0',
     description="bingwallpaper-dl is only a tool that demonstrates the way to parse html content and download media file from Internet.",
     author='S.W.You',
